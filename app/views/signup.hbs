@@ -1,0 +1,62 @@
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">My System</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/signin">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/signup">Register</a>
+                </li>
+            </ul>
+        </div><!--/.navbar-collapse -->
+    </div>
+</div>
+
+<div class="container-fluid body-container">
+    <div class="form-title">
+        <label>Sign Up</label>
+    </div>
+    {{#if errors}}
+        {{#each errors}}
+            <div class="alert alert-danger">{{msg}}</div>
+        {{/each}}
+    {{/if}}
+    <form method="post" name="signup" action="/signup" class="my-forms" id="registration-form">
+        <div class="form-group">
+            <label for="firstname" id="input-labels">First Name</label>   
+            <input type="text" id="firstname" name="firstname" placeholder="Enter First Name" required>       
+        </div>
+        <div class="form-group">
+            <label for="lastname" id="input-labels">Last Name</label>   
+            <input type="text" name="lastname" id="lastname" placeholder="Enter Last Name" required>       
+        </div>
+        <div class="form-group">
+            <label for="userEmail" id="input-labels">Email</label>  
+            <input type="email" name="email" id="email" placeholder="Enter Email" required>        
+        </div>
+        <div class="form-group">
+            <label for="newPassword" id="input-labels">Enter Password</label>   
+            <input type="password" name="password" id="newPassword" placeholder="Enter Password" required>     
+        </div>
+        <div class="form-group">
+            <label for="confirmPassword" id="input-labels">Confirm Password</label> 
+            <input type="password" name="password2" id="confirmPassword" placeholder="Confirm Password" required>     
+        </div>
+        <div class="form-group">
+            <button class="btn btn-info" id="btn-login">Sign Up</button>
+        </div>
+    </form>
+</div>

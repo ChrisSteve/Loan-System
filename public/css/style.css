@@ -1,0 +1,118 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	font-size: 13px;
+}
+
+
+/****************************Navigation*********************************/
+
+.navbar {
+	border-radius: 0;
+	line-height: 50px;
+}
+
+.navbar-nav {
+	float: right;
+}
+
+.navbar-nav li {
+	list-style: none;
+	min-width: 70px;
+}
+
+
+/****************************Navigation*********************************/
+
+.nav-body {
+	height: 300px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto auto;
+	width: 250px;
+}
+
+.nav-body ul {
+
+}
+
+.nav-body ul li a {
+	color: rgba(52, 73, 94,1.0);
+	letter-spacing: 1px;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	display: block;
+	text-align: center;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+
+
+/****************************My forms*********************************/
+
+#input-labels {
+	font-weight: 300;
+	min-width: 100px;
+}
+
+.my-forms {
+	max-width: 350px;
+	margin: 20px auto;
+	display: block;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 3px
+}
+
+.my-forms input {
+	width:100%;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+.form-title {
+	text-align: center;
+}
+
+.form-title label {
+	font-weight: 300;
+	font-size: 15px;
+	letter-spacing: 1px;
+}
+
+
+
+/****************************Body Styles*********************************/
+
+.main-body-container {
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+
+.main-navigation {
+	width: 250px;
+	height: 100%;
+	display: inline-block;
+	float: left;
+}
+
+.main-body {
+	width: calc(100vw - 250px);
+	height: 100%;
+	overflow-y: auto;
+	display: inline-block;
+	float: right;
+}
+
+.body-content {
+	height: calc(100% - 60px);
+	background-color: rgba(236, 240, 241, 0.3);
+	margin: 30px 30px 30px 0;
+}
+
